@@ -12,7 +12,6 @@ public class CarControl : MonoBehaviour
     {
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
-        Debug.Log(motor);
 
         foreach (AxleInfo axle in axleInfos) {
             if(axle.steering) {
